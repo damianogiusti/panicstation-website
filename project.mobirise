@@ -49,13 +49,14 @@
       }
     ],
     "favicon": false,
-    "mbrsiteDomain": false,
+    "mbrsiteDomain": "fjqoee7wxy",
     "imageResize": false,
     "usedWebp": false,
     "robotsSwitcher": false,
-    "sitemapSwitcher": false,
-    "sitemapSwitcherAuto": false,
-    "siteUrl": false,
+    "sitemapSwitcher": true,
+    "sitemapSwitcherAuto": "on",
+    "siteUrl": "https://panicstation.it",
+    "robotsText": "User-agent: *\r\nDisallow: /cgi-bin\r\n",
     "cookiesAlert": false,
     "gdpr": false,
     "uniqCompNum": 11,
@@ -65,11 +66,12 @@
     "index.html": {
       "settings": {
         "main": true,
-        "title": "Home",
-        "meta_descr": "",
+        "title": "Panic Station - Live Pop Rock Band",
+        "meta_descr": "Sito web ufficiale di Panic Station - Live Pop Rock Band - San Vito Al Tagliamento (PN), Italia - Seguici su Instagram e Facebook",
         "header_custom": "",
         "footer_custom": "",
-        "html_before": ""
+        "html_before": "",
+        "socialSharingUrl": ""
       },
       "components": [
         {
