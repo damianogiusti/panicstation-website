@@ -352,7 +352,8 @@
             
             <div class="row row-copirayt">
                 <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">
-                    <br>© Copyright 2023 Panic Station. All Rights Reserved.
+                    <br>
+                    <span id="copyright_js" />
                 </p>
             </div>
         </div>
@@ -363,4 +364,9 @@
   
   <input name="animation" type="hidden">
   </body>
+
+  <script>
+    const year = new Date().getFullYear();
+    document.getElementById("copyright_js").innerHTML = "© Copyright " + year + " Panic Station. All Rights Reserved.";
+  </script>
 </html>
