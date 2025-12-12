@@ -31,6 +31,67 @@
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
 
   
+
+
+<script type="text/javascript">
+    async function addNextGigs() {
+        const container = document.getElementById("next_gigs");
+        const gigs = [
+            {
+                date: "22-11-1995",
+                location: "Birreria La Mondina",
+                eventName: "Festa della birra"
+            }
+        ];
+
+        const template = `
+            
+            <div class="row mt-4">
+                <div class="card col-12">
+                    <div class="card-wrapper">
+                        <div class="top-line row">
+                            <div class="col">
+                                <h4 class="card-title mbr-fonts-style display-5">{{date}}</h4>
+                            </div>
+                            <div class="col-auto">
+                                <p class="price mbr-fonts-style display-5">{{eventName}}</p>
+                            </div>
+                        </div>
+                        <div class="bottom-line">
+                            <p class="mbr-text mbr-fonts-style display-7">{{location}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        fetch("https://thdytdygeajopcaxiguy.supabase.co/functions/v1/get-gigs")
+          .then((response) => response.json())
+          .then((response) => {
+            response.gigs.forEach(gig => {
+                const newElement = template
+                    .replace("{{date}}", gig.date)
+                    .replace("{{eventName}}", gig.eventName)
+                    .replace("{{location}}", gig.location);
+                const node = document.createElement("div");
+                node.innerHTML = newElement;
+                container.appendChild(node);
+            })
+            if (response.isTeaserEnabled) {
+                const newElement = template
+                    .replace("{{date}}", "In continuo aggiornamento...")
+                    .replace("{{eventName}}", "")
+                    .replace("{{location}}", "");
+                const node = document.createElement("div");
+                node.innerHTML = newElement;
+                container.appendChild(node);
+
+            }
+          })
+          .catch(console.error);
+    }
+    addEventListener("load", (event) => { addNextGigs() });
+</script>
   
   
 </head>
@@ -212,32 +273,10 @@
 
     
     
-    <div class="container">
+    <div class="container" id="next_gigs">
         <div class="mbr-section-head">
             <h3 class="mbr-section-title mbr-fonts-style mb-0 display-2">
                 <strong>Prossimi live</strong></h3>
-            
-        </div>
-        <div class="row mt-4">
-            <div class="card col-12">
-                <div class="card-wrapper">
-                    <div class="top-line row">
-                        <div class="col">
-                            <h4 class="card-title mbr-fonts-style display-5">IN AGGIORNAMENTO...</h4>
-                        </div>
-                        <div class="col-auto">
-                            <p class="price mbr-fonts-style display-5"></p>
-                        </div>
-                    </div>
-                    <div class="bottom-line">
-                        <p class="mbr-text mbr-fonts-style display-7"></p>
-                    </div>
-                </div>
-            </div>
-            
-            
-            
-            
             
         </div>
     </div>
@@ -318,4 +357,6 @@
     const year = new Date().getFullYear();
     document.getElementById("copyright_js").innerHTML = "© Copyright " + year + " Panic Station. All Rights Reserved.";
   </script>
+
+
 </html>
