@@ -34,6 +34,17 @@
 
 
 <script type="text/javascript">
+    // Format date for display
+    function formatDate(dateStr) {
+      const parts = dateStr.split('-');
+      if (parts.length === 3) {
+        const [year, month, day] = parts;
+        const months = ['Gen', 'Feb', 'Mar', 'Apr', 'Mag', 'Giu', 'Lug', 'Ago', 'Set', 'Ott', 'Nov', 'Dic'];
+        return `${day} ${months[parseInt(month) - 1]} ${year}`;
+      }
+      return dateStr;
+    };
+
     async function addNextGigs() {
         const container = document.getElementById("next_gigs");
         const gigs = [
@@ -48,7 +59,7 @@
             
             <div class="row mt-4">
                 <div class="card col-12">
-                    <div class="card-wrapper">
+                    <div class="card-wrapper" style="margin-bottom: 0">
                         <div class="top-line row">
                             <div class="col">
                                 <h4 class="card-title mbr-fonts-style display-5">{{date}}</h4>
@@ -68,9 +79,17 @@
         fetch("https://thdytdygeajopcaxiguy.supabase.co/functions/v1/get-gigs")
           .then((response) => response.json())
           .then((response) => {
-            response.gigs.forEach(gig => {
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            
+            const upcomingGigs = response.gigs.filter(gig => {
+              const gigDate = new Date(gig.date);
+              return gigDate >= today;
+            });
+
+            upcomingGigs.forEach(gig => {
                 const newElement = template
-                    .replace("{{date}}", gig.date)
+                    .replace("{{date}}", formatDate(gig.date))
                     .replace("{{eventName}}", gig.eventName)
                     .replace("{{location}}", gig.location);
                 const node = document.createElement("div");
