@@ -34,6 +34,52 @@
 
 
 <script type="text/javascript">
+
+    const templateGig = `
+        <div class="row mt-4">
+            <div class="card col-12">
+                <div class="card-wrapper" style="margin-bottom: 0">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5">{{date}}</h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5">{{eventName}}</p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">{{location}}</p>
+                    </div>
+                    <div class="gig-cta">
+                    <a href="{{calendarLink}}" target="_blank" rel="noopener" class="mbr-fonts-style display-7" style="font-size: 1rem">
+                        📅&nbsp;&nbsp;<u>Aggiungi al calendario</u>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+
+    const templateTeaser = `
+        <div class="row mt-4">
+            <div class="card col-12">
+                <div class="card-wrapper" style="margin-bottom: 0">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5">{{date}}</h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5">{{eventName}}</p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">{{location}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+        
     // Format date for display
     function formatDate(dateStr) {
       const parts = dateStr.split('-');
@@ -45,6 +91,29 @@
       return dateStr;
     };
 
+    function generateCalendarLink(gig) {
+        const startDate = new Date(gig.date);
+
+        // Fine = giorno successivo (Google richiede end esclusivo)
+        const endDate = new Date(startDate);
+        endDate.setDate(endDate.getDate() + 1);
+
+        function formatAllDay(date) {
+            return date.toISOString().split("T")[0].replace(/-/g, "");
+        }
+
+        const baseUrl = "https://calendar.google.com/calendar/render?action=TEMPLATE";
+
+        const params = new URLSearchParams({
+            text: `Panic Station @ ${gig.eventName}`,
+            dates: formatAllDay(startDate) + "/" + formatAllDay(endDate),
+            details: "Live Panic Station",
+            location: gig.location
+        });
+
+        return `${baseUrl}&${params.toString()}`;
+    }
+
     async function addNextGigs() {
         const container = document.getElementById("next_gigs");
         const gigs = [
@@ -54,27 +123,6 @@
                 eventName: "Festa della birra"
             }
         ];
-
-        const template = `
-            
-            <div class="row mt-4">
-                <div class="card col-12">
-                    <div class="card-wrapper" style="margin-bottom: 0">
-                        <div class="top-line row">
-                            <div class="col">
-                                <h4 class="card-title mbr-fonts-style display-5">{{date}}</h4>
-                            </div>
-                            <div class="col-auto">
-                                <p class="price mbr-fonts-style display-5">{{eventName}}</p>
-                            </div>
-                        </div>
-                        <div class="bottom-line">
-                            <p class="mbr-text mbr-fonts-style display-7">{{location}}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        `;
 
         fetch("https://thdytdygeajopcaxiguy.supabase.co/functions/v1/get-gigs")
           .then((response) => response.json())
@@ -88,16 +136,18 @@
             });
 
             upcomingGigs.forEach(gig => {
-                const newElement = template
+                const calendarLink = generateCalendarLink(gig);
+                const newElement = templateGig
                     .replace("{{date}}", formatDate(gig.date))
                     .replace("{{eventName}}", gig.eventName)
-                    .replace("{{location}}", gig.location);
+                    .replace("{{location}}", gig.location)
+                    .replace("{{calendarLink}}", calendarLink);;
                 const node = document.createElement("div");
                 node.innerHTML = newElement;
                 container.appendChild(node);
             })
             if (response.isTeaserEnabled) {
-                const newElement = template
+                const newElement = templateTeaser
                     .replace("{{date}}", "In continuo aggiornamento...")
                     .replace("{{eventName}}", "")
                     .replace("{{location}}", "");
