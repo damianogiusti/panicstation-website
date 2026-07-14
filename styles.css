@@ -118,9 +118,10 @@ img { max-width: 100%; display: block; }
 
 /* ===== Band (split slide-in) ===== */
 .band { background: var(--surface-2); padding: 6rem 0; }
-.band-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 3rem; align-items: center; }
+.band-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 3.5rem; align-items: center; }
 .band-photo { margin: 0; border-radius: 14px; overflow: hidden; box-shadow: 14px 14px 0 var(--pink); }
-.band-photo img { width: 100%; object-fit: cover; }
+.band-photo { align-self: start; }
+.band-photo img { display: block; width: 100%; height: auto; }
 .band-text p { margin: 0 0 1.1rem; color: var(--muted); }
 .band-text .members-intro { color: var(--ink); font-weight: 700; margin-bottom: .4rem; }
 .members { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
