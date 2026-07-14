@@ -65,5 +65,38 @@ var TRANSLATIONS = {
     "gig.addCalendar": "Add to calendar",
     "gig.teaser": "Constantly updated...",
     "gig.calendarDetails": "Panic Station Live"
+  },
+
+  de: {
+    "meta.description": "Offizielle Website von Panic Station - Live Pop Rock Band - San Vito Al Tagliamento (PN), Italien - Folge uns auf Instagram und Facebook",
+
+    "nav.band": "Band",
+    "nav.dates": "Termine",
+    "nav.contact": "Kontakt",
+
+    "cards.material": "AUDIO / VIDEO <br> MATERIAL",
+    "cards.ads": "WERBUNG<br>LOGO &amp; PLAKATE",
+    "cards.rider": "TECHNISCHER <br> RIDER",
+
+    "band.heading": "BAND",
+    "band.p1": "Panic Station ist ein junges, dynamisches Projekt, das 2020 entstand, seine künstlerische Identität aber erst 2021 fand. Ihre musikalische Reise führte sie dazu, die Leidenschaft für Rock mit modernem Pop zu verschmelzen und sich innovativen Arrangements und aktuellen Klängen zu widmen.",
+    "band.p2": "Ihre Bühnenerfahrung, über Jahre in den unterschiedlichsten musikalischen Kontexten verfeinert, zeigt sich in einer energiegeladenen, kraftvollen Show rund um eine Auswahl ikonischer Songs, neu interpretiert im modernen Rock-Stil. Ihre etwa zweieinhalbstündige Setlist verbindet angesagte Hits mit Pop-Rock-Klassikern und aktuellen Chart-Erfolgen – Namen wie Dua Lipa, Katy Perry und Billie Eilish neben Måneskin, Green Day und Avril Lavigne.",
+    "band.p3": "In der Region aktiv, haben sie an mehreren Veranstaltungen teilgenommen, darunter das Vorprogramm des Konzerts von Maurizio Solieri im September 2021. Panic Station ist eine Band voller Energie und Begeisterung, angetrieben vom Wunsch zu wachsen, und behauptet stets ihren einzigartigen Stil und ihren unterhaltsamen Zugang zur Musik.",
+    "band.membersIntro": "Panic Station sind:",
+    "role.vocals": "Gesang",
+    "role.guitar": "Gitarre",
+    "role.bass": "Bass",
+    "role.drums": "Schlagzeug",
+
+    "gigs.heading": "Kommende Auftritte",
+    "contact.heading": "KONTAKT",
+
+    "footer.presskit": "Press Kit",
+    "footer.material": "Audio-Video-Material",
+
+    months: ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"],
+    "gig.addCalendar": "Zum Kalender hinzufügen",
+    "gig.teaser": "Wird laufend aktualisiert...",
+    "gig.calendarDetails": "Panic Station Live"
   }
 };
