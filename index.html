@@ -4,34 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/logo-2.png" type="image/x-icon">
-
-  <title>Panic Station - Live Pop Rock Band</title>
-
-  <meta name="description" data-i18n="meta.description" content="Sito web ufficiale di Panic Station - Live Pop Rock Band - San Vito Al Tagliamento (PN), Italia - Seguici su Instagram e Facebook">
-  <meta name="keywords" content="Band pop rock San Vito al Tagliamento, Musica dal vivo Pordenone, Cover band eventi pubblici, Live performance San Vito al Tagliamento, Pop rock cover band, Live music Pordenone, Portogruaro, Bibione, Lignano">
+  <title>Panic Station — Live Pop Rock Band</title>
+  <meta name="description" data-i18n="meta.description" content="Sito web ufficiale di Panic Station - Live Pop Rock Band - San Vito Al Tagliamento (PN), Italia">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"></noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap">
 
   <link rel="stylesheet" href="styles.css">
   <script defer src="translations.js"></script>
   <script defer src="script.js"></script>
 </head>
-<body>
+<body class="vb">
 
-  <!-- Navbar -->
   <header class="navbar" id="top">
     <div class="container navbar-inner">
       <a class="navbar-brand" href="#top" aria-label="Panic Station">
         <img src="assets/images/logo-2.png" alt="Panic Station">
       </a>
-
       <button class="navbar-toggle" type="button" aria-controls="nav-menu" aria-expanded="false" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
-
       <nav class="navbar-menu" id="nav-menu">
         <ul class="nav-links">
           <li><a href="#band" data-i18n="nav.band">Band</a></li>
@@ -44,10 +37,8 @@
           <a href="mailto:info@panicstation.it?subject=Contatto da sito web" aria-label="Email" data-icon="mail"></a>
         </div>
         <div class="lang-switch" role="group" aria-label="Language">
-          <button type="button" data-lang="it">IT</button>
-          <span aria-hidden="true">|</span>
-          <button type="button" data-lang="en">EN</button>
-          <span aria-hidden="true">|</span>
+          <button type="button" data-lang="it">IT</button><span aria-hidden="true">|</span>
+          <button type="button" data-lang="en">EN</button><span aria-hidden="true">|</span>
           <button type="button" data-lang="de">DE</button>
         </div>
       </nav>
@@ -56,36 +47,27 @@
 
   <!-- Hero -->
   <section class="hero" id="hero">
-    <div class="overlay" style="opacity:.6"></div>
-    <div class="container hero-inner">
-      <img class="hero-logo" src="assets/images/logo-vettoriale-copy.pdf-svg.png" alt="Panic Station">
-    </div>
-  </section>
-
-  <!-- Social bar -->
-  <section class="social-bar">
-    <div class="container">
-      <div class="social-list">
-        <a class="social-btn facebook" href="https://www.facebook.com/panicstation.live/" target="_blank" rel="noopener" aria-label="Facebook" data-icon="facebook"></a>
-        <a class="social-btn instagram" href="https://www.instagram.com/panicstation.live/" target="_blank" rel="noopener" aria-label="Instagram" data-icon="instagram"></a>
-        <a class="social-btn mail" href="mailto:info@panicstation.it?subject=Contatto da sito web" aria-label="Email" data-icon="mail"></a>
-      </div>
-    </div>
+    <picture class="hero-bg">
+      <source media="(orientation: portrait)" srcset="assets/images/copertina-mobile.webp">
+      <img src="assets/images/copertina-desktop.webp" alt="Panic Station" fetchpriority="high">
+    </picture>
+    <div class="hero-scrim"></div>
+    <img class="hero-logo" src="assets/images/logo-vettoriale-copy.pdf-svg.png" alt="Panic Station">
   </section>
 
   <!-- Quick links -->
   <section class="quick-links">
     <div class="container">
       <div class="cards">
-        <a class="card" href="https://materiale.panicstation.it" target="_blank" rel="noopener">
+        <a class="card" href="https://materiale.panicstation.it" target="_blank" rel="noopener" data-reveal>
           <span class="card-icon" data-icon="play"></span>
           <h3 class="card-title" data-i18n-html="cards.material">MATERIALE <br> AUDIO / VIDEO</h3>
         </a>
-        <a class="card" href="https://drive.google.com/drive/folders/1IUiKf55fL4-iTd4FxjVwKEXodRz_qEDn" target="_blank" rel="noopener">
+        <a class="card" href="https://drive.google.com/drive/folders/1IUiKf55fL4-iTd4FxjVwKEXodRz_qEDn" target="_blank" rel="noopener" data-reveal>
           <span class="card-icon" data-icon="print"></span>
           <h3 class="card-title" data-i18n-html="cards.ads">PUBBLICITÀ<br>LOGO E LOCANDINE</h3>
         </a>
-        <a class="card" href="https://drive.google.com/file/d/1LFYhdl3VUo5XoUsHOWB9RDWOVeJ8-pVO/view?usp=drive_link" target="_blank" rel="noopener">
+        <a class="card" href="https://drive.google.com/file/d/1LFYhdl3VUo5XoUsHOWB9RDWOVeJ8-pVO/view?usp=drive_link" target="_blank" rel="noopener" data-reveal>
           <span class="card-icon" data-icon="gear"></span>
           <h3 class="card-title" data-i18n-html="cards.rider">RIDER <br> TECNICO</h3>
         </a>
@@ -93,31 +75,33 @@
     </div>
   </section>
 
-  <!-- Band bio -->
+  <!-- Band -->
   <section class="band" id="band">
-    <div class="container narrow">
-      <h2 class="section-title" data-i18n="band.heading">BAND</h2>
-      <p data-i18n="band.p1">I Panic Station sono un progetto giovane e dinamico che ha visto la luce nel 2020, ma è nel 2021 che ha definito la propria identità artistica. Il loro viaggio musicale li ha condotti a fondersi nella passione per il rock unita alla musica pop moderna, impegnandosi nella creazione di arrangiamenti innovativi e sonorità attuali.</p>
-      <p data-i18n="band.p2">La loro esperienza sul palco, messa a punto durante anni di esibizioni in diversi contesti musicali, si riflette in uno spettacolo energico e imponente, caratterizzato da una selezione di brani iconici rivisitati in chiave rock moderna. La loro setlist, della durata di circa due ore e mezza, include successi di tendenza accompagnati da classici del pop rock e hits degli ultimi anni. Spiccano nomi come Dua Lipa, Katy Perry, Billie Eilish, ma anche Maneskin, Green Day e Avril Lavigne.</p>
-      <p data-i18n="band.p3">Attivi sul territorio, hanno partecipato a diverse iniziative, tra cui l'apertura del concerto di Maurizio Solieri nel settembre 2021. I Panic Station sono una band carica di energia e entusiasmo, motivati dalla voglia di crescere, affermando sempre il loro stile unico e l'approccio divertente alla musica.</p>
-      <p class="members-intro" data-i18n="band.membersIntro">I Panic Station sono:</p>
-      <ul class="members">
-        <li>Roberta Liut &ndash; <span data-i18n="role.vocals">voce</span></li>
-        <li>Andrea Fregonese &ndash; <span data-i18n="role.guitar">chitarra</span></li>
-        <li>Damiano Giusti &ndash; <span data-i18n="role.guitar">chitarra</span></li>
-        <li>Umberto Danelon &ndash; <span data-i18n="role.bass">basso</span></li>
-        <li>Denis Ventoruzzo &ndash; <span data-i18n="role.drums">batteria</span></li>
-      </ul>
+    <div class="container band-grid">
+      <figure class="band-photo" data-reveal>
+        <img src="assets/images/band.webp" alt="Panic Station" loading="lazy">
+      </figure>
+      <div class="band-text" data-reveal>
+        <h2 class="section-title" data-i18n="band.heading">BAND</h2>
+        <p data-i18n="band.p1">I Panic Station sono un progetto giovane e dinamico che ha visto la luce nel 2020, ma è nel 2021 che ha definito la propria identità artistica.</p>
+        <p data-i18n="band.p2">La loro esperienza sul palco si riflette in uno spettacolo energico e imponente.</p>
+        <p data-i18n="band.p3">Attivi sul territorio, hanno partecipato a diverse iniziative.</p>
+        <p class="members-intro" data-i18n="band.membersIntro">I Panic Station sono:</p>
+        <ul class="members">
+          <li>Roberta Liut &ndash; <span data-i18n="role.vocals">voce</span></li>
+          <li>Andrea Fregonese &ndash; <span data-i18n="role.guitar">chitarra</span></li>
+          <li>Damiano Giusti &ndash; <span data-i18n="role.guitar">chitarra</span></li>
+          <li>Umberto Danelon &ndash; <span data-i18n="role.bass">basso</span></li>
+          <li>Denis Ventoruzzo &ndash; <span data-i18n="role.drums">batteria</span></li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <!-- Parallax divider -->
-  <section class="parallax" aria-hidden="true"></section>
-
-  <!-- Upcoming gigs -->
+  <!-- Gigs -->
   <section class="gigs" id="date">
     <div class="container" id="next_gigs">
-      <div class="section-head">
+      <div class="section-head" data-reveal>
         <h2 class="section-title" data-i18n="gigs.heading">Prossimi live</h2>
       </div>
     </div>
@@ -125,10 +109,13 @@
 
   <!-- Contact -->
   <section class="contact" id="contattaci">
-    <div class="overlay" style="opacity:.8"></div>
+    <picture class="contact-bg">
+      <img src="assets/images/footer.webp" alt="" loading="lazy">
+    </picture>
+    <div class="contact-scrim"></div>
     <div class="container">
-      <h2 class="section-title center" data-i18n="contact.heading">CONTATTACI</h2>
-      <div class="social-list">
+      <h2 class="section-title center" data-i18n="contact.heading" data-reveal>CONTATTACI</h2>
+      <div class="social-list" data-reveal>
         <a class="social-btn facebook" href="https://www.facebook.com/panicstation.live/" target="_blank" rel="noopener" aria-label="Facebook" data-icon="facebook"></a>
         <a class="social-btn instagram" href="https://www.instagram.com/panicstation.live/" target="_blank" rel="noopener" aria-label="Instagram" data-icon="instagram"></a>
         <a class="social-btn mail" href="mailto:info@panicstation.it?subject=Contatto da sito web" aria-label="Email" data-icon="mail"></a>
@@ -136,7 +123,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <ul class="foot-menu">
