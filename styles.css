@@ -154,19 +154,16 @@ img { max-width: 100%; display: block; }
 .gig-cta a { display: inline-flex; align-items: center; gap: .4rem; font-weight: 700; color: var(--blue); }
 .gig-cta u { text-decoration: none; border-bottom: 2px solid currentColor; }
 
-/* teaser: subtle "more dates coming" note, not a ticket */
-.gig-item--teaser { grid-column: 1 / -1; animation: none; }
+/* teaser: static "continuously updated" note, not a ticket */
+.gig-item--teaser { grid-column: 1 / -1; text-align: center; }
 .gig-teaser {
-  margin: .75rem 0 0; text-align: center; font-style: italic;
-  color: var(--muted); font-size: 1.05rem;
-  display: flex; align-items: center; justify-content: center; gap: .55rem;
+  display: inline-flex; align-items: center; gap: .55rem;
+  margin: .9rem 0 0; padding: .6rem 1.3rem;
+  border: 1px dashed var(--blue); border-radius: 999px;
+  background: var(--surface); color: var(--muted);
+  font-style: italic; font-size: 1.02rem;
 }
-.gig-teaser::before {
-  content: ""; width: .55rem; height: .55rem; border-radius: 50%;
-  background: var(--pink); animation: pulse 1.6s ease-in-out infinite;
-}
-@keyframes pulse { 0%,100% { opacity: .35; transform: scale(.8); } 50% { opacity: 1; transform: scale(1); } }
-@media (prefers-reduced-motion: reduce) { .gig-teaser::before { animation: none; } }
+.gig-teaser-ic { width: 1.2rem; height: 1.2rem; color: var(--blue); flex: none; }
 
 /* ===== Contact ===== */
 .contact { position: relative; padding: 8rem 0; overflow: hidden; }
