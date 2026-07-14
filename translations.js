@@ -11,7 +11,7 @@ var TRANSLATIONS = {
 
     "downloads.heading": "MATERIALI",
     "downloads.subtitle": "Logo, locandine, rider tecnico e contenuti audio/video della band.",
-    "cards.cta": "Scarica",
+    "cards.cta": "Apri Google Drive",
     "cards.material": "MATERIALE <br> AUDIO / VIDEO",
     "cards.material.desc": "Foto, audio e video live pronti da ascoltare e guardare.",
     "cards.ads": "PUBBLICITÀ<br>LOGO E LOCANDINE",
@@ -48,7 +48,7 @@ var TRANSLATIONS = {
 
     "downloads.heading": "DOWNLOADS",
     "downloads.subtitle": "Logo, posters, technical rider and the band's audio/video content.",
-    "cards.cta": "Download",
+    "cards.cta": "Open Google Drive",
     "cards.material": "AUDIO / VIDEO <br> MATERIAL",
     "cards.material.desc": "Live photos, audio and video ready to listen and watch.",
     "cards.ads": "PROMO<br>LOGO &amp; POSTERS",
@@ -85,7 +85,7 @@ var TRANSLATIONS = {
 
     "downloads.heading": "DOWNLOADS",
     "downloads.subtitle": "Logo, Plakate, technischer Rider und Audio-/Video-Inhalte der Band.",
-    "cards.cta": "Herunterladen",
+    "cards.cta": "Google Drive öffnen",
     "cards.material": "AUDIO / VIDEO <br> MATERIAL",
     "cards.material.desc": "Live-Fotos, Audio und Video zum Anhören und Ansehen.",
     "cards.ads": "WERBUNG<br>LOGO &amp; PLAKATE",
