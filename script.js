@@ -52,7 +52,9 @@
     const d = dict(lang);
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const v = d[el.getAttribute("data-i18n")];
-      if (v != null) el.textContent = v;
+      if (v == null) return;
+      if (el.tagName === "META") el.setAttribute("content", v);
+      else el.textContent = v;
     });
     document.querySelectorAll("[data-i18n-html]").forEach((el) => {
       const v = d[el.getAttribute("data-i18n-html")];
