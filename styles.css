@@ -184,6 +184,10 @@ img { max-width: 100%; display: block; }
 /* ===== Footer (navy anchor) ===== */
 .footer { background: var(--navy); padding: 2.5rem 0; text-align: center; }
 .copyright { margin: 0; font-size: .9rem; color: rgba(255,255,255,.65); }
+.footer-credit { margin: .45rem 0 0; font-size: .85rem; color: rgba(255,255,255,.55); }
+.footer-credit .heart { color: var(--pink); }
+.footer-credit a { color: rgba(255,255,255,.85); border-bottom: 1px solid transparent; transition: border-color .2s, color .2s; }
+.footer-credit a:hover { color: #fff; border-color: currentColor; }
 
 [id] { scroll-margin-top: var(--nav-h); }
 
