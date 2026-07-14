@@ -21,8 +21,8 @@ var TRANSLATIONS = {
 
     "band.heading": "BAND",
     "band.p1": "Panic Station è una live band pop rock nata dall'incontro di cinque musicisti con anni di palco alle spalle. Un progetto che unisce l'energia del rock alla freschezza del pop contemporaneo, con arrangiamenti curati e un sound moderno e riconoscibile.",
-    "band.p2": "Lo spettacolo, della durata di circa due ore e mezza, attraversa i grandi successi di oggi e i classici che hanno fatto la storia del pop rock: da Dua Lipa, Billie Eilish e Chappell Roan a Green Day, Paramore, Måneskin, The Police e Bon Jovi, passando per hit italiane e internazionali. Un percorso pensato per far cantare e ballare qualsiasi pubblico.",
-    "band.p3": "Dietro Panic Station c'è esperienza vera: ogni componente arriva da anni di concerti e progetti dal vivo, e questa maturità si sente sul palco, in una performance energica, precisa e coinvolgente. Una band affidabile e professionale, pronta per club, piazze ed eventi di ogni dimensione.",
+    "band.p2": "Il repertorio spazia dai grandi successi di oggi ai classici che hanno fatto la storia del pop rock: da Dua Lipa, Billie Eilish e Chappell Roan a Green Day, Paramore, Måneskin, The Police e Bon Jovi, passando per hit italiane e internazionali. Un incontro di generi e generazioni che tiene alta l'energia dal primo all'ultimo brano.",
+    "band.p3": "Dietro Panic Station c'è esperienza vera: ogni componente arriva da anni di concerti e progetti dal vivo, e questa maturità si sente sul palco, in una performance energica, precisa e coinvolgente. Una band professionale, a suo agio tra club, piazze ed eventi di ogni dimensione.",
     "band.membersIntro": "I Panic Station sono:",
     "role.vocals": "voce",
     "role.guitar": "chitarra",
@@ -58,8 +58,8 @@ var TRANSLATIONS = {
 
     "band.heading": "BAND",
     "band.p1": "Panic Station is a pop rock live band born from the meeting of five musicians with years of stage experience behind them. A project that blends the energy of rock with the freshness of contemporary pop, built on tight arrangements and a modern, recognisable sound.",
-    "band.p2": "The show runs for about two and a half hours, moving through today's biggest hits and the classics that shaped pop rock — from Dua Lipa, Billie Eilish and Chappell Roan to Green Day, Paramore, Måneskin, The Police and Bon Jovi, alongside Italian and international favourites. A set designed to get any crowd singing and dancing.",
-    "band.p3": "Behind Panic Station there is real experience: every member comes from years of live concerts and projects, and that maturity shows on stage, in an energetic, tight and engaging performance. A reliable, professional band, at home in clubs, town squares and events of any size.",
+    "band.p2": "The repertoire spans today's biggest hits and the classics that shaped pop rock — from Dua Lipa, Billie Eilish and Chappell Roan to Green Day, Paramore, Måneskin, The Police and Bon Jovi, alongside Italian and international favourites. A blend of genres and generations that keeps the energy high from the first song to the last.",
+    "band.p3": "Behind Panic Station there is real experience: every member comes from years of live concerts and projects, and that maturity shows on stage, in an energetic, tight and engaging performance. A professional band, at home in clubs, town squares and events of any size.",
     "band.membersIntro": "Panic Station is:",
     "role.vocals": "vocals",
     "role.guitar": "guitar",
@@ -95,8 +95,8 @@ var TRANSLATIONS = {
 
     "band.heading": "BAND",
     "band.p1": "Panic Station ist eine Pop-Rock-Live-Band, entstanden aus dem Zusammentreffen von fünf Musikern mit jahrelanger Bühnenerfahrung. Ein Projekt, das die Energie des Rock mit der Frische des zeitgenössischen Pop verbindet – mit durchdachten Arrangements und einem modernen, wiedererkennbaren Sound.",
-    "band.p2": "Die rund zweieinhalbstündige Show spannt den Bogen von den größten Hits von heute bis zu den Klassikern, die den Pop-Rock geprägt haben: von Dua Lipa, Billie Eilish und Chappell Roan bis Green Day, Paramore, Måneskin, The Police und Bon Jovi, dazu italienische und internationale Lieblingssongs. Ein Set, das jedes Publikum zum Singen und Tanzen bringt.",
-    "band.p3": "Hinter Panic Station steckt echte Erfahrung: Jedes Mitglied bringt Jahre an Live-Konzerten und Projekten mit, und diese Reife zeigt sich auf der Bühne – in einer energiegeladenen, präzisen und mitreißenden Performance. Eine zuverlässige, professionelle Band, zu Hause in Clubs, auf Plätzen und bei Events jeder Größe.",
+    "band.p2": "Das Repertoire reicht von den größten Hits von heute bis zu den Klassikern, die den Pop-Rock geprägt haben: von Dua Lipa, Billie Eilish und Chappell Roan bis Green Day, Paramore, Måneskin, The Police und Bon Jovi, dazu italienische und internationale Lieblingssongs. Eine Mischung aus Genres und Generationen, die die Energie vom ersten bis zum letzten Song hochhält.",
+    "band.p3": "Hinter Panic Station steckt echte Erfahrung: Jedes Mitglied bringt Jahre an Live-Konzerten und Projekten mit, und diese Reife zeigt sich auf der Bühne – in einer energiegeladenen, präzisen und mitreißenden Performance. Eine professionelle Band, zu Hause in Clubs, auf Plätzen und bei Events jeder Größe.",
     "band.membersIntro": "Panic Station sind:",
     "role.vocals": "Gesang",
     "role.guitar": "Gitarre",
