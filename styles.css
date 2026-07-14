@@ -216,3 +216,10 @@ img { max-width: 100%; display: block; }
   .gig-date { font-size: 2rem; }
   .gig-card::before, .gig-card::after { display: none; }
 }
+/* Tablet portrait (e.g. iPad): same head-safe fullscreen hero, full nav kept */
+@media (orientation: portrait) and (min-width: 769px) and (max-width: 1024px) {
+  .navbar { position: sticky; top: 0; }
+  .hero { height: calc(100svh - var(--nav-h)); min-height: 520px; }
+  .hero-bg img { object-position: center top; }
+  .hero-logo { top: 72%; transform: translate(-50%, -50%); width: min(66%, 560px); }
+}
