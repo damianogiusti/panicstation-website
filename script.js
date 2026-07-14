@@ -86,14 +86,7 @@
       </div>
     </div>`;
 
-  const templateTeaser = `
-    <div class="gig-card">
-      <div class="gig-top">
-        <h4 class="gig-date">{{date}}</h4>
-        <p class="gig-name"></p>
-      </div>
-      <p class="gig-location"></p>
-    </div>`;
+  const templateTeaser = `<p class="gig-teaser">{{text}}</p>`;
 
   let gigsData = null; // { gigs: [...], isTeaserEnabled }
 
@@ -127,8 +120,8 @@
     const container = document.getElementById("next_gigs");
     if (!container || !gigsData) return;
 
-    // Clear any previously rendered cards (keep the section heading).
-    container.querySelectorAll(".gig-card").forEach((n) => n.parentNode.remove());
+    // Clear any previously rendered items (keep the section heading).
+    container.querySelectorAll(".gig-item").forEach((n) => n.remove());
 
     const today = new Date();
     today.setHours(0, 0, 0, 0);
@@ -143,13 +136,15 @@
         .replace("{{calendarLink}}", generateCalendarLink(gig, currentLang))
         .replace("{{cta}}", t(currentLang, "gig.addCalendar"));
       const node = document.createElement("div");
+      node.className = "gig-item";
       node.innerHTML = html;
       container.appendChild(node);
     });
 
     if (gigsData.isTeaserEnabled) {
       const node = document.createElement("div");
-      node.innerHTML = templateTeaser.replace("{{date}}", t(currentLang, "gig.teaser"));
+      node.className = "gig-item gig-item--teaser";
+      node.innerHTML = templateTeaser.replace("{{text}}", t(currentLang, "gig.teaser"));
       container.appendChild(node);
     }
   }

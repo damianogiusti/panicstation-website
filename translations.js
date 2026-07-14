@@ -34,7 +34,7 @@ var TRANSLATIONS = {
 
     months: ["Gen", "Feb", "Mar", "Apr", "Mag", "Giu", "Lug", "Ago", "Set", "Ott", "Nov", "Dic"],
     "gig.addCalendar": "Aggiungi al calendario",
-    "gig.teaser": "In continuo aggiornamento...",
+    "gig.teaser": "Altre date in arrivo…",
     "gig.calendarDetails": "Live Panic Station"
   },
 
@@ -71,7 +71,7 @@ var TRANSLATIONS = {
 
     months: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
     "gig.addCalendar": "Add to calendar",
-    "gig.teaser": "Constantly updated...",
+    "gig.teaser": "More dates coming soon…",
     "gig.calendarDetails": "Panic Station Live"
   },
 
@@ -108,7 +108,7 @@ var TRANSLATIONS = {
 
     months: ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"],
     "gig.addCalendar": "Zum Kalender hinzufügen",
-    "gig.teaser": "Wird laufend aktualisiert...",
+    "gig.teaser": "Weitere Termine folgen…",
     "gig.calendarDetails": "Panic Station Live"
   }
 };
