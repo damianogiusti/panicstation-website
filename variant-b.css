@@ -179,9 +179,9 @@ img { max-width: 100%; display: block; }
   /* mobile hero: bg fills width & centered; logo fills width & centered */
   .hero-bg img { object-position: center center; }
   .hero-scrim { background:
-    radial-gradient(130% 60% at 50% 45%, rgba(12,24,40,.5) 0%, rgba(12,24,40,.18) 55%, rgba(12,24,40,0) 78%),
-    linear-gradient(180deg, rgba(12,24,40,.4) 0%, rgba(12,24,40,.1) 30%, rgba(12,24,40,.55) 100%); }
-  .hero-logo { width: 94%; }
+    radial-gradient(130% 55% at 50% 75%, rgba(12,24,40,.55) 0%, rgba(12,24,40,.2) 55%, rgba(12,24,40,0) 80%),
+    linear-gradient(180deg, rgba(12,24,40,.35) 0%, rgba(12,24,40,.08) 26%, rgba(12,24,40,.55) 100%); }
+  .hero-logo { width: 94%; top: 75%; transform: translate(-50%, -50%); }
   .gig-name { text-align: left; font-size: 2rem; }
   .gig-date { font-size: 2rem; }
   .gig-card::before, .gig-card::after { display: none; }
