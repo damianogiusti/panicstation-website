@@ -38,7 +38,7 @@ var TRANSLATIONS = {
     "meta.description": "Official website of Panic Station - Live Pop Rock Band - San Vito Al Tagliamento (PN), Italy - Follow us on Instagram and Facebook",
 
     "nav.band": "Band",
-    "nav.dates": "Dates",
+    "nav.dates": "Shows",
     "nav.contact": "Contact",
 
     "cards.material": "AUDIO / VIDEO <br> MATERIAL",
