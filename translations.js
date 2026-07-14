@@ -32,8 +32,6 @@ var TRANSLATIONS = {
     "gigs.heading": "Prossimi live",
     "contact.heading": "CONTATTACI",
 
-    "footer.presskit": "Press Kit",
-
     months: ["Gen", "Feb", "Mar", "Apr", "Mag", "Giu", "Lug", "Ago", "Set", "Ott", "Nov", "Dic"],
     "gig.addCalendar": "Aggiungi al calendario",
     "gig.teaser": "In continuo aggiornamento...",
@@ -71,8 +69,6 @@ var TRANSLATIONS = {
     "gigs.heading": "Upcoming shows",
     "contact.heading": "CONTACT",
 
-    "footer.presskit": "Press Kit",
-
     months: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
     "gig.addCalendar": "Add to calendar",
     "gig.teaser": "Constantly updated...",
@@ -109,8 +105,6 @@ var TRANSLATIONS = {
 
     "gigs.heading": "Kommende Auftritte",
     "contact.heading": "KONTAKT",
-
-    "footer.presskit": "Press Kit",
 
     months: ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"],
     "gig.addCalendar": "Zum Kalender hinzufügen",
