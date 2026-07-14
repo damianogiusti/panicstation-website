@@ -3,17 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/logo-2.png" type="image/x-icon">
-  <title>Panic Station — Live Pop Rock Band</title>
-  <meta name="description" data-i18n="meta.description" content="Sito web ufficiale di Panic Station - Live Pop Rock Band - San Vito Al Tagliamento (PN), Italia">
 
+  <title>Panic Station — Live Pop Rock Band | Friuli e Veneto</title>
+  <meta name="description" data-i18n="meta.description" content="Panic Station: live band pop rock in Friuli e Veneto (San Vito al Tagliamento, Portogruaro, Pordenone). Grandi successi pop e classici rock suonati dal vivo per feste, sagre ed eventi.">
+  <meta name="keywords" content="Panic Station, band pop rock, live band Friuli, cover band Veneto, musica dal vivo San Vito al Tagliamento, band Portogruaro, band Pordenone, gruppo musicale pop rock, live music, feste sagre eventi">
+  <meta name="author" content="Panic Station">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#123049">
+  <link rel="canonical" href="https://www.panicstation.it/">
+
+  <!-- Local SEO -->
+  <meta name="geo.region" content="IT-FVG">
+  <meta name="geo.placename" content="San Vito al Tagliamento, Pordenone">
+  <meta name="geo.position" content="45.9167;12.8583">
+  <meta name="ICBM" content="45.9167, 12.8583">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="assets/images/logo-2.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/images/logo-2.png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Panic Station">
+  <meta property="og:title" content="Panic Station — Live Pop Rock Band">
+  <meta property="og:description" content="Live band pop rock in Friuli e Veneto. Successi pop e classici rock suonati dal vivo per feste, sagre ed eventi.">
+  <meta property="og:url" content="https://www.panicstation.it/">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:image" content="https://www.panicstation.it/assets/images/copertina-desktop.webp">
+  <meta property="og:image:type" content="image/webp">
+  <meta property="og:image:width" content="2400">
+  <meta property="og:image:height" content="1600">
+  <meta property="og:image:alt" content="Panic Station live pop rock band">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Panic Station — Live Pop Rock Band">
+  <meta name="twitter:description" content="Live band pop rock in Friuli e Veneto. Successi pop e classici rock suonati dal vivo.">
+  <meta name="twitter:image" content="https://www.panicstation.it/assets/images/copertina-desktop.webp">
+
+  <!-- Fonts + critical hero preload (LCP) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap">
+  <link rel="preload" as="image" href="assets/images/copertina-desktop.webp" media="(orientation: landscape)" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/images/copertina-mobile.webp" media="(orientation: portrait)" fetchpriority="high">
 
   <link rel="stylesheet" href="styles.css">
   <script defer src="translations.js"></script>
   <script defer src="script.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicGroup",
+    "name": "Panic Station",
+    "url": "https://www.panicstation.it/",
+    "logo": "https://www.panicstation.it/assets/images/logo-2.png",
+    "image": "https://www.panicstation.it/assets/images/copertina-desktop.webp",
+    "genre": ["Pop Rock", "Rock", "Pop", "Cover Band"],
+    "foundingDate": "2020",
+    "email": "info@panicstation.it",
+    "sameAs": [
+      "https://www.facebook.com/panicstation.live/",
+      "https://www.instagram.com/panicstation.live/"
+    ],
+    "areaServed": [
+      { "@type": "AdministrativeArea", "name": "Friuli-Venezia Giulia" },
+      { "@type": "AdministrativeArea", "name": "Veneto" },
+      { "@type": "City", "name": "San Vito al Tagliamento" },
+      { "@type": "City", "name": "Portogruaro" },
+      { "@type": "City", "name": "Pordenone" }
+    ],
+    "member": [
+      { "@type": "Person", "name": "Roberta Liut", "roleName": "voce" },
+      { "@type": "Person", "name": "Andrea Fregonese", "roleName": "chitarra" },
+      { "@type": "Person", "name": "Damiano Giusti", "roleName": "chitarra" },
+      { "@type": "Person", "name": "Elias Ferreira", "roleName": "basso" },
+      { "@type": "Person", "name": "Vittorio Trevisan", "roleName": "batteria" }
+    ]
+  }
+  </script>
 </head>
 <body class="vb">
 
@@ -60,7 +131,7 @@
   <section class="band" id="band">
     <div class="container band-grid">
       <figure class="band-photo" data-reveal>
-        <img src="assets/images/band.webp" alt="Panic Station" loading="lazy">
+        <img src="assets/images/band.webp" alt="Panic Station live pop rock band" width="2000" height="1334" loading="lazy">
       </figure>
       <div class="band-text" data-reveal>
         <h2 class="section-title" data-i18n="band.heading">BAND</h2>

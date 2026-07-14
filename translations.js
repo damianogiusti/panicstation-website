@@ -2,7 +2,7 @@
 /* global var so script.js can read it without imports. */
 var TRANSLATIONS = {
   it: {
-    "meta.description": "Sito web ufficiale di Panic Station - Live Pop Rock Band - San Vito Al Tagliamento (PN), Italia - Seguici su Instagram e Facebook",
+    "meta.description": "Panic Station: live band pop rock in Friuli e Veneto (San Vito al Tagliamento, Portogruaro, Pordenone). Grandi successi pop e classici rock suonati dal vivo per feste, sagre ed eventi.",
 
     "nav.band": "Band",
     "nav.dates": "Date",
@@ -39,7 +39,7 @@ var TRANSLATIONS = {
   },
 
   en: {
-    "meta.description": "Official website of Panic Station - Live Pop Rock Band - San Vito Al Tagliamento (PN), Italy - Follow us on Instagram and Facebook",
+    "meta.description": "Panic Station: live pop rock band across Friuli and Veneto (San Vito al Tagliamento, Portogruaro, Pordenone). Pop hits and rock classics performed live for parties, festivals and events.",
 
     "nav.band": "Band",
     "nav.dates": "Shows",
@@ -76,7 +76,7 @@ var TRANSLATIONS = {
   },
 
   de: {
-    "meta.description": "Offizielle Website von Panic Station - Live Pop Rock Band - San Vito Al Tagliamento (PN), Italien - Folge uns auf Instagram und Facebook",
+    "meta.description": "Panic Station: Live-Pop-Rock-Band in Friaul und Venetien (San Vito al Tagliamento, Portogruaro, Pordenone). Pop-Hits und Rock-Klassiker live für Feste, Feiern und Events.",
 
     "nav.band": "Band",
     "nav.dates": "Termine",
