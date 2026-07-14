@@ -89,15 +89,20 @@ img { max-width: 100%; display: block; }
 @keyframes heroPop { from { opacity: 0; transform: translate(-50%,-46%) scale(.94); } to { opacity: 1; transform: translate(-50%,-52%) scale(1); } }
 .hero-scroll {
   position: absolute; left: 50%; bottom: 1.6rem; transform: translateX(-50%);
-  z-index: 3; color: #fff; opacity: .85;
+  z-index: 3; color: #fff; opacity: 0;
   display: grid; place-items: center;
   filter: drop-shadow(0 2px 8px rgba(4,16,28,.55));
   transition: opacity .2s;
+  animation: heroCue .8s ease 2.4s forwards;
 }
 .hero-scroll:hover { opacity: 1; }
+@keyframes heroCue { to { opacity: .85; } }
 .hero-scroll svg { width: 2.2rem; height: 2.2rem; animation: heroBob 1.8s ease-in-out infinite; }
 @keyframes heroBob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(9px); } }
-@media (prefers-reduced-motion: reduce) { .hero-scroll svg { animation: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .hero-scroll { opacity: .85; animation: none; }
+  .hero-scroll svg { animation: none; }
+}
 
 /* ===== Downloads / Quick links ===== */
 .quick-links { background: var(--bg); padding: 4rem 0; }
