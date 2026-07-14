@@ -20,7 +20,7 @@ var TRANSLATIONS = {
     "cards.rider.desc": "Scheda tecnica e piano palco per fonici e service.",
 
     "band.heading": "BAND",
-    "band.p1": "Panic Station è una live band pop rock nata dall'incontro di cinque musicisti con anni di palco alle spalle. Un progetto che unisce l'energia del rock alla freschezza del pop contemporaneo, con arrangiamenti curati e un sound moderno e riconoscibile.",
+    "band.p1": "Panic Station è una live band pop rock nata dall'incontro di cinque musicisti con anni di palco alle spalle. Due chitarre, basso, batteria e voce: nessuna base, tutto suonato al cento per cento dal vivo, unendo l'energia del rock alla freschezza del pop contemporaneo.",
     "band.p2": "Il repertorio spazia dai grandi successi di oggi ai classici che hanno fatto la storia del pop rock: da Dua Lipa, Billie Eilish e Chappell Roan a Green Day, Paramore, Måneskin, The Police e Bon Jovi, passando per hit italiane e internazionali. Un incontro di generi e generazioni che tiene alta l'energia dal primo all'ultimo brano.",
     "band.p3": "Dietro Panic Station c'è esperienza vera: ogni componente arriva da anni di concerti e progetti dal vivo, e questa maturità si sente sul palco, in una performance energica, precisa e coinvolgente. Una band professionale, a suo agio tra club, piazze ed eventi di ogni dimensione.",
     "band.membersIntro": "I Panic Station sono:",
@@ -57,7 +57,7 @@ var TRANSLATIONS = {
     "cards.rider.desc": "Tech spec and stage plot for sound engineers and crew.",
 
     "band.heading": "BAND",
-    "band.p1": "Panic Station is a pop rock live band born from the meeting of five musicians with years of stage experience behind them. A project that blends the energy of rock with the freshness of contemporary pop, built on tight arrangements and a modern, recognisable sound.",
+    "band.p1": "Panic Station is a pop rock live band born from the meeting of five musicians with years of stage experience behind them. Two guitars, bass, drums and vocals: no backing tracks, everything played one hundred per cent live, bringing together the energy of rock and the freshness of contemporary pop.",
     "band.p2": "The repertoire spans today's biggest hits and the classics that shaped pop rock — from Dua Lipa, Billie Eilish and Chappell Roan to Green Day, Paramore, Måneskin, The Police and Bon Jovi, alongside Italian and international favourites. A blend of genres and generations that keeps the energy high from the first song to the last.",
     "band.p3": "Behind Panic Station there is real experience: every member comes from years of live concerts and projects, and that maturity shows on stage, in an energetic, tight and engaging performance. A professional band, at home in clubs, town squares and events of any size.",
     "band.membersIntro": "Panic Station is:",
@@ -94,7 +94,7 @@ var TRANSLATIONS = {
     "cards.rider.desc": "Technische Angaben und Bühnenplan für Techniker und Crew.",
 
     "band.heading": "BAND",
-    "band.p1": "Panic Station ist eine Pop-Rock-Live-Band, entstanden aus dem Zusammentreffen von fünf Musikern mit jahrelanger Bühnenerfahrung. Ein Projekt, das die Energie des Rock mit der Frische des zeitgenössischen Pop verbindet – mit durchdachten Arrangements und einem modernen, wiedererkennbaren Sound.",
+    "band.p1": "Panic Station ist eine Pop-Rock-Live-Band, entstanden aus dem Zusammentreffen von fünf Musikern mit jahrelanger Bühnenerfahrung. Zwei Gitarren, Bass, Schlagzeug und Gesang: keine Playbacks, alles zu hundert Prozent live gespielt – die Energie des Rock trifft auf die Frische des zeitgenössischen Pop.",
     "band.p2": "Das Repertoire reicht von den größten Hits von heute bis zu den Klassikern, die den Pop-Rock geprägt haben: von Dua Lipa, Billie Eilish und Chappell Roan bis Green Day, Paramore, Måneskin, The Police und Bon Jovi, dazu italienische und internationale Lieblingssongs. Eine Mischung aus Genres und Generationen, die die Energie vom ersten bis zum letzten Song hochhält.",
     "band.p3": "Hinter Panic Station steckt echte Erfahrung: Jedes Mitglied bringt Jahre an Live-Konzerten und Projekten mit, und diese Reife zeigt sich auf der Bühne – in einer energiegeladenen, präzisen und mitreißenden Performance. Eine professionelle Band, zu Hause in Clubs, auf Plätzen und bei Events jeder Größe.",
     "band.membersIntro": "Panic Station sind:",
