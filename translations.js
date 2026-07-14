@@ -13,8 +13,11 @@ var TRANSLATIONS = {
     "downloads.subtitle": "Logo, locandine, rider tecnico e contenuti audio/video della band.",
     "cards.cta": "Scarica",
     "cards.material": "MATERIALE <br> AUDIO / VIDEO",
+    "cards.material.desc": "Foto, audio e video live pronti da ascoltare e guardare.",
     "cards.ads": "PUBBLICITÀ<br>LOGO E LOCANDINE",
+    "cards.ads.desc": "Logo, locandine e grafiche pronte da stampare per il tuo evento.",
     "cards.rider": "RIDER <br> TECNICO",
+    "cards.rider.desc": "Scheda tecnica e piano palco per fonici e service.",
 
     "band.heading": "BAND",
     "band.p1": "I Panic Station sono un progetto giovane e dinamico che ha visto la luce nel 2020, ma è nel 2021 che ha definito la propria identità artistica. Il loro viaggio musicale li ha condotti a fondersi nella passione per il rock unita alla musica pop moderna, impegnandosi nella creazione di arrangiamenti innovativi e sonorità attuali.",
@@ -30,7 +33,6 @@ var TRANSLATIONS = {
     "contact.heading": "CONTATTACI",
 
     "footer.presskit": "Press Kit",
-    "footer.material": "Materiale Audio Video",
 
     months: ["Gen", "Feb", "Mar", "Apr", "Mag", "Giu", "Lug", "Ago", "Set", "Ott", "Nov", "Dic"],
     "gig.addCalendar": "Aggiungi al calendario",
@@ -50,8 +52,11 @@ var TRANSLATIONS = {
     "downloads.subtitle": "Logo, posters, technical rider and the band's audio/video content.",
     "cards.cta": "Download",
     "cards.material": "AUDIO / VIDEO <br> MATERIAL",
+    "cards.material.desc": "Live photos, audio and video ready to listen and watch.",
     "cards.ads": "PROMO<br>LOGO &amp; POSTERS",
+    "cards.ads.desc": "Logo, posters and artwork ready to print for your event.",
     "cards.rider": "TECHNICAL <br> RIDER",
+    "cards.rider.desc": "Tech spec and stage plot for sound engineers and crew.",
 
     "band.heading": "BAND",
     "band.p1": "Panic Station is a young, dynamic project that first came to life in 2020, but it was in 2021 that it defined its artistic identity. Their musical journey led them to blend a passion for rock with modern pop, committing to innovative arrangements and contemporary sounds.",
@@ -67,7 +72,6 @@ var TRANSLATIONS = {
     "contact.heading": "CONTACT",
 
     "footer.presskit": "Press Kit",
-    "footer.material": "Audio Video Material",
 
     months: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
     "gig.addCalendar": "Add to calendar",
@@ -87,8 +91,11 @@ var TRANSLATIONS = {
     "downloads.subtitle": "Logo, Plakate, technischer Rider und Audio-/Video-Inhalte der Band.",
     "cards.cta": "Herunterladen",
     "cards.material": "AUDIO / VIDEO <br> MATERIAL",
+    "cards.material.desc": "Live-Fotos, Audio und Video zum Anhören und Ansehen.",
     "cards.ads": "WERBUNG<br>LOGO &amp; PLAKATE",
+    "cards.ads.desc": "Logo, Plakate und Grafiken druckfertig für dein Event.",
     "cards.rider": "TECHNISCHER <br> RIDER",
+    "cards.rider.desc": "Technische Angaben und Bühnenplan für Techniker und Crew.",
 
     "band.heading": "BAND",
     "band.p1": "Panic Station ist ein junges, dynamisches Projekt, das 2020 entstand, seine künstlerische Identität aber erst 2021 fand. Ihre musikalische Reise führte sie dazu, die Leidenschaft für Rock mit modernem Pop zu verschmelzen und sich innovativen Arrangements und aktuellen Klängen zu widmen.",
@@ -104,7 +111,6 @@ var TRANSLATIONS = {
     "contact.heading": "KONTAKT",
 
     "footer.presskit": "Press Kit",
-    "footer.material": "Audio-Video-Material",
 
     months: ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"],
     "gig.addCalendar": "Zum Kalender hinzufügen",
