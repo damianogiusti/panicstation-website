@@ -178,6 +178,21 @@
     );
   }
 
+  /* ---------- Scroll reveal (variants opt in via [data-reveal]) ---------- */
+  function initReveal() {
+    const els = document.querySelectorAll("[data-reveal]");
+    if (!els.length || !("IntersectionObserver" in window)) {
+      els.forEach((el) => el.classList.add("is-visible"));
+      return;
+    }
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) { e.target.classList.add("is-visible"); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.15, rootMargin: "0px 0px -8% 0px" });
+    els.forEach((el) => io.observe(el));
+  }
+
   /* ---------- Copyright ---------- */
   function initCopyright() {
     const el = document.getElementById("copyright_js");
@@ -188,6 +203,7 @@
   function init() {
     injectIcons();
     initNavbar();
+    initReveal();
     initCopyright();
 
     document.querySelectorAll(".lang-switch button").forEach((b) =>
