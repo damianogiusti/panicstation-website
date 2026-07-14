@@ -6,16 +6,18 @@
   --surface-2: #c2d3e4;   /* alt section (deeper blue tint) */
   --line: #bccbdb;
   --ink: #123049;         /* dark navy text */
-  --muted: #56697c;
+  --muted: #45566a;       /* AA on light-blue surfaces */
   --blue: #2f6fb0;        /* brand blue */
   --blue-d: #1d4368;
   --navy: #0d3350;        /* footer / anchor navy */
   --blue-soft: #dbe8f5;
-  --pink: #ea5894;        /* brand pink */
+  --pink: #ea5894;        /* brand pink (decorative) */
+  --pink-text: #c8407a;   /* darker pink for text (AA on white) */
   --orange: #f6893f;
   --yellow: #f2c14e;
   --grad: linear-gradient(90deg, #f6a13e 0%, #ea5894 100%);
   --grad-d: linear-gradient(135deg, #f6a13e 0%, #ea5894 60%, #c8407a 100%);
+  --grad-h: linear-gradient(135deg, #cf6a1a 0%, #ea5894 55%, #c8407a 100%); /* ticket header: white text ≥3:1 */
   --nav-h: 4.5rem;
   --fd: 'Bebas Neue', Impact, sans-serif;
   --fb: 'Source Sans 3', -apple-system, Segoe UI, Roboto, sans-serif;
@@ -109,7 +111,7 @@ img { max-width: 100%; display: block; }
 .band-text .members-intro { color: var(--ink); font-weight: 700; margin-bottom: .4rem; }
 .members { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
 .members li { background: var(--surface); border: 2px solid var(--blue); border-radius: 999px; padding: .3rem .9rem; font-weight: 600; font-size: .95rem; color: var(--ink); }
-.members li span { color: var(--pink); }
+.members li span { color: var(--pink-text); }
 
 /* ===== Gigs (ticket cards) ===== */
 .gigs { background: var(--bg); padding: 5rem 0 6rem; }
@@ -130,7 +132,7 @@ img { max-width: 100%; display: block; }
 .gig-card:hover { transform: translateY(-6px) scale(1.01); box-shadow: 0 22px 46px rgba(234,88,148,.22); }
 .gig-card::before, .gig-card::after { content: ""; position: absolute; top: 3.4rem; width: 22px; height: 22px; background: var(--bg); border-radius: 50%; transform: translateY(-50%); z-index: 2; }
 .gig-card::before { left: -11px; } .gig-card::after { right: -11px; }
-.gig-top { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; background: var(--grad-d); color: #fff; padding: 1.35rem 2rem; }
+.gig-top { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; background: var(--grad-h); color: #fff; padding: 1.35rem 2rem; }
 .gig-date { font-family: var(--fd); font-size: 2.5rem; letter-spacing: .02em; margin: 0; }
 .gig-name { font-family: var(--fd); font-size: 2.5rem; letter-spacing: .02em; margin: 0; color: #fff; text-align: right; text-shadow: 0 1px 8px rgba(120,20,70,.35); }
 .gig-location { margin: 0; padding: 1.25rem 2rem 0; font-weight: 600; color: var(--ink); }
