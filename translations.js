@@ -78,7 +78,7 @@ var TRANSLATIONS = {
   },
 
   de: {
-    "meta.description": "Panic Station: Live-Pop-Rock-Band in Friaul und Venetien (San Vito al Tagliamento, Portogruaro, Pordenone). Pop-Hits und Rock-Klassiker live für Feste, Feiern und Events.",
+    "meta.description": "Panic Station: Live-Pop-Rock-Band in Friaul und Venetien (San Vito al Tagliamento, Portogruaro, Pordenone). Pop-Hits und Rock-Klassiker live für Feste, Dorffeste und Events.",
 
     "nav.band": "Band",
     "nav.dates": "Termine",
@@ -99,7 +99,7 @@ var TRANSLATIONS = {
     "band.p1": "Panic Station ist eine Pop-Rock-Live-Band aus Friaul-Julisch Venetien, die fünf Musiker mit jahrelanger Bühnenerfahrung vereint. Ein Projekt, das die Energie des Rock mit der Frische des zeitgenössischen Pop verbindet – live gebracht in Friaul und dem östlichen Venetien, in Clubs, bei Dorffesten und öffentlichen Veranstaltungen, mit der Intensität einer echten Performance.",
     "band.p2": "Die Setlist reicht von den größten Hits von heute bis zu den Klassikern, die den Pop-Rock geprägt haben: von Dua Lipa, Billie Eilish und Chappell Roan bis Green Day, Paramore, Måneskin, The Police und Bon Jovi, dazu italienische und internationale Lieblingssongs. Eine Mischung aus Genres und Generationen, die die Energie vom ersten bis zum letzten Song hochhält.",
     "band.p3": "Hinter Panic Station steckt echte Erfahrung: Jedes Mitglied bringt Jahre an Live-Konzerten und Projekten mit, und diese Reife zeigt sich auf der Bühne – in einer energiegeladenen, präzisen und mitreißenden Performance. Eine professionelle Band, in ihrem Element in Clubs, auf Plätzen und bei Events jeder Größe.",
-    "band.membersIntro": "Panic Station sind:",
+    "band.membersIntro": "Panic Station ist:",
     "role.vocals": "Gesang",
     "role.guitar": "Gitarre",
     "role.bass": "Bass",
@@ -134,9 +134,9 @@ var TRANSLATIONS = {
     "cards.rider.desc": "Tehnične specifikacije in načrt odra za tonske tehnike in ekipo.",
 
     "band.heading": "SKUPINA",
-    "band.p1": "Panic Station je pop rock skupina v živo iz Furlanije-Julijske krajine, ki združuje pet glasbenikov z dolgoletnimi izkušnjami na odru. Projekt, ki povezuje energijo rocka in svežino sodobnega popa, prinesen v živo po Furlaniji in vzhodnem Venetu v lokale, na veselice in javne dogodke z intenzivnostjo pravega nastopa.",
+    "band.p1": "Panic Station je pop rock skupina v živo iz Furlanije-Julijske krajine, ki združuje pet glasbenikov z dolgoletnimi izkušnjami na odru. Projekt, ki povezuje energijo rocka in svežino sodobnega popa ter ga v živo predstavlja po Furlaniji in vzhodnem Venetu v lokalih, na veselicah in javnih dogodkih z intenzivnostjo pravega nastopa.",
     "band.p2": "Repertoar sega od največjih današnjih uspešnic do klasik, ki so zaznamovale pop rock: od Dua Lipa, Billie Eilish in Chappell Roan do Green Day, Paramore, Måneskin, The Police in Bon Jovi, poleg italijanskih in mednarodnih priljubljenih pesmi. Mešanica žanrov in generacij, ki ohranja energijo od prve do zadnje pesmi.",
-    "band.p3": "Za Panic Station stojijo prave izkušnje: vsak član prihaja iz let koncertov in projektov v živo, ta zrelost pa se pozna na odru – v energičnem, natančnem in privlačnem nastopu. Profesionalna skupina, ki se odlično znajde v klubih, na trgih in na dogodkih vseh velikosti.",
+    "band.p3": "Za Panic Station stojijo prave izkušnje: vsak član ima za seboj leta koncertov in projektov v živo, ta zrelost pa se pozna na odru – v energičnem, natančnem in privlačnem nastopu. Profesionalna skupina, ki se odlično znajde v klubih, na trgih in na dogodkih vseh velikosti.",
     "band.membersIntro": "Panic Station so:",
     "role.vocals": "vokal",
     "role.guitar": "kitara",
@@ -150,6 +150,6 @@ var TRANSLATIONS = {
     "gig.addCalendar": "Dodaj v koledar",
     "gig.teaser": "Se nenehno posodablja",
     "gig.calendarDetails": "Panic Station v živo",
-    "footer.photos": "Fotografije"
+    "footer.photos": "Fotografije:"
   }
 };
