@@ -188,6 +188,51 @@
     els.forEach((el) => io.observe(el));
   }
 
+  /* ---------- Band carousel ---------- */
+  function initCarousel() {
+    const root = document.querySelector(".band-carousel");
+    if (!root) return;
+    const slides = Array.from(root.querySelectorAll(".carousel-slide"));
+    const dotsWrap = root.querySelector(".carousel-dots");
+    const prev = root.querySelector(".carousel-btn.prev");
+    const next = root.querySelector(".carousel-btn.next");
+    if (slides.length < 2) return;
+
+    let index = 0;
+    let timer = null;
+    const DELAY = 3000;
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    const dots = slides.map((_, i) => {
+      const b = document.createElement("button");
+      b.className = "carousel-dot" + (i === 0 ? " is-active" : "");
+      b.type = "button";
+      b.setAttribute("role", "tab");
+      b.setAttribute("aria-label", "Foto " + (i + 1));
+      b.addEventListener("click", () => { go(i); restart(); });
+      dotsWrap.appendChild(b);
+      return b;
+    });
+
+    function go(n) {
+      index = (n + slides.length) % slides.length;
+      slides.forEach((s, i) => s.classList.toggle("is-active", i === index));
+      dots.forEach((d, i) => d.classList.toggle("is-active", i === index));
+    }
+    function step() { go(index + 1); }
+    function start() { if (!reduce && !timer) timer = setInterval(step, DELAY); }
+    function stop() { if (timer) { clearInterval(timer); timer = null; } }
+    function restart() { stop(); start(); }
+
+    prev.addEventListener("click", () => { go(index - 1); restart(); });
+    next.addEventListener("click", () => { go(index + 1); restart(); });
+    root.addEventListener("mouseenter", stop);
+    root.addEventListener("mouseleave", start);
+    document.addEventListener("visibilitychange", () => document.hidden ? stop() : start());
+
+    start();
+  }
+
   /* ---------- Copyright ---------- */
   function initCopyright() {
     const el = document.getElementById("copyright_js");
@@ -199,6 +244,7 @@
     injectIcons();
     initNavbar();
     initReveal();
+    initCarousel();
     initCopyright();
 
     document.querySelectorAll(".lang-switch button").forEach((b) =>
