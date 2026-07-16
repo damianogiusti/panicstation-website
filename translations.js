@@ -37,8 +37,8 @@ var TRANSLATIONS = {
     "gig.teaser": "In continuo aggiornamento",
     "gig.calendarDetails": "Live Panic Station",
     "footer.photos": "Foto di",
-    "footer.madeWith": "Fatto con",
-    "footer.by": "da"
+    "footer.madeWith": "Made with",
+    "footer.by": "by"
   },
 
   en: {
