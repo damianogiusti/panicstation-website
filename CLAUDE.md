@@ -1,6 +1,9 @@
 # CLAUDE.md
 
-Guidance for working in this repository.
+Guidance for working in this repository. **Keep this file up to date**: when a
+convention, workflow, or structural fact here stops matching reality (new
+language, new section, changed deploy rule…), update CLAUDE.md as part of the
+same change.
 
 ## What this is
 
@@ -19,7 +22,7 @@ static files. Do not reintroduce Bootstrap, Mobirise, or any bundler.
   flexbox for layout, `IntersectionObserver`-driven scroll reveals (`[data-reveal]`).
 - `script.js` — one IIFE. Inline SVG icons, i18n (`setLang`), gig fetch/render,
   band carousel, mobile navbar toggle, copyright year.
-- `translations.js` — `var TRANSLATIONS = { it, en, de }` string dictionary read
+- `translations.js` — `var TRANSLATIONS = { it, en, de, sl }` string dictionary read
   by `script.js` (plain global, no imports).
 - `CNAME`, `sitemap.xml`, `robots.txt` — GitHub Pages / SEO. Keep in sync with
   the live domain.
@@ -28,19 +31,22 @@ static files. Do not reintroduce Bootstrap, Mobirise, or any bundler.
 
 ## Internationalization
 
-Three languages: **it / en / de**. Mechanism:
+Four languages: **it / en / de / sl** (Slovenian added for Slovenia /
+cross-border SEO). Navbar toggle order: IT | EN | DE | SL. Mechanism:
 
 - Text nodes carry `data-i18n="key"` (set via `textContent`) or
   `data-i18n-html="key"` (set via `innerHTML`, for strings containing markup).
-- `translations.js` holds the dictionary; every key must exist in all three
+- `translations.js` holds the dictionary; every key must exist in all four
   languages.
 - `setLang(lang)` in `script.js` walks the attributes, sets `<html lang>`, and
   persists the choice to `localStorage`.
 - First visit auto-detects `navigator.language`: `it*` → IT, `de*` → DE,
-  everything else → EN. A remembered choice overrides detection.
+  `sl*` → SL, everything else → EN. A remembered choice overrides detection.
 - Gig rendering is language-aware (month names, "add to calendar" label, teaser).
+- The footer author credit ("Made with ♥ by …") stays in English for the IT
+  block too — do not translate it into Italian.
 
-When adding user-visible text, add the key to **all three** language blocks.
+When adding user-visible text, add the key to **all four** language blocks.
 
 ## Gigs
 
@@ -68,9 +74,15 @@ originals.
 ## Git / deploy workflow
 
 - `main` is the deployed branch. Development happens on a **feature branch
-  created per user request** (e.g. `band-carousel`), with small, incremental
-  commits. `de-mobirise-rewrite` was a one-off migration branch, not the ongoing
-  dev branch — don't treat it as the default.
+  created per user request** (e.g. `band-carousel`). `de-mobirise-rewrite` was a
+  one-off migration branch, not the ongoing dev branch — don't treat it as the
+  default.
+- **Commit each logical step as you go** — don't batch several unrelated changes
+  into one commit at the end. One concern per commit (e.g. a schema change, a
+  proofreading fix, and a new feature are three commits, not one).
+- **Never merge to `main`, push, or otherwise deploy without explicit user
+  consent.** Work and commit on the feature branch; wait for a clear go-ahead
+  ("deploy", "vai") before touching `main`.
 - Deploy = merge the feature branch into `main` with `--no-ff` (keeps history
   revertable), push both branches, then switch back to the feature branch. Keep
   it around for reverts.
