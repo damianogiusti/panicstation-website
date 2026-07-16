@@ -200,7 +200,7 @@
 
     let index = 0;
     let timer = null;
-    const DELAY = 5000;
+    const DELAY = 3000;
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     const dots = slides.map((_, i) => {
@@ -220,7 +220,7 @@
       dots.forEach((d, i) => d.classList.toggle("is-active", i === index));
     }
     function step() { go(index + 1); }
-    function start() { if (!reduce) timer = setInterval(step, DELAY); }
+    function start() { if (!reduce && !timer) timer = setInterval(step, DELAY); }
     function stop() { if (timer) { clearInterval(timer); timer = null; } }
     function restart() { stop(); start(); }
 
