@@ -31,6 +31,7 @@
   <meta property="og:locale" content="it_IT">
   <meta property="og:locale:alternate" content="en_US">
   <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="sl_SI">
   <meta property="og:image" content="https://www.panicstation.it/assets/images/preview.webp">
   <meta property="og:image:type" content="image/webp">
   <meta property="og:image:width" content="1640">
@@ -65,16 +66,86 @@
     "genre": ["Pop Rock", "Rock", "Pop", "Cover Band"],
     "foundingDate": "2020",
     "email": "info@panicstation.it",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "San Vito al Tagliamento",
+      "addressRegion": "Friuli-Venezia Giulia",
+      "addressCountry": "IT"
+    },
     "sameAs": [
       "https://www.facebook.com/panicstation.live/",
       "https://www.instagram.com/panicstation.live/"
     ],
     "areaServed": [
+      {
+        "@type": "GeoCircle",
+        "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 45.9167, "longitude": 12.8583 },
+        "geoRadius": 50000
+      },
       { "@type": "AdministrativeArea", "name": "Friuli-Venezia Giulia" },
       { "@type": "AdministrativeArea", "name": "Veneto" },
+      { "@type": "Country", "name": "Austria" },
+      { "@type": "Country", "name": "Slovenia" },
       { "@type": "City", "name": "San Vito al Tagliamento" },
+      { "@type": "City", "name": "Pordenone" },
+      { "@type": "City", "name": "Casarsa della Delizia" },
+      { "@type": "City", "name": "Spilimbergo" },
+      { "@type": "City", "name": "Sacile" },
+      { "@type": "City", "name": "Maniago" },
+      { "@type": "City", "name": "Aviano" },
+      { "@type": "City", "name": "Cordovado" },
+      { "@type": "City", "name": "Sesto al Reghena" },
+      { "@type": "City", "name": "Valvasone Arzene" },
+      { "@type": "City", "name": "Zoppola" },
+      { "@type": "City", "name": "Fiume Veneto" },
+      { "@type": "City", "name": "Azzano Decimo" },
+      { "@type": "City", "name": "Pasiano di Pordenone" },
+      { "@type": "City", "name": "Prata di Pordenone" },
+      { "@type": "City", "name": "Brugnera" },
+      { "@type": "City", "name": "Porcia" },
+      { "@type": "City", "name": "Cordenons" },
+      { "@type": "City", "name": "Fontanafredda" },
+      { "@type": "City", "name": "Chions" },
+      { "@type": "City", "name": "San Giorgio della Richinvelda" },
+      { "@type": "City", "name": "Morsano al Tagliamento" },
+      { "@type": "City", "name": "Udine" },
+      { "@type": "City", "name": "Codroipo" },
+      { "@type": "City", "name": "Latisana" },
+      { "@type": "City", "name": "Lignano Sabbiadoro" },
+      { "@type": "City", "name": "Palmanova" },
+      { "@type": "City", "name": "San Daniele del Friuli" },
+      { "@type": "City", "name": "Cividale del Friuli" },
+      { "@type": "City", "name": "Mortegliano" },
+      { "@type": "City", "name": "Rivignano Teor" },
+      { "@type": "City", "name": "Bertiolo" },
+      { "@type": "City", "name": "Camino al Tagliamento" },
+      { "@type": "City", "name": "Talmassons" },
+      { "@type": "City", "name": "Sedegliano" },
+      { "@type": "City", "name": "Varmo" },
+      { "@type": "City", "name": "Ronchis" },
+      { "@type": "City", "name": "Precenicco" },
+      { "@type": "City", "name": "Marano Lagunare" },
+      { "@type": "City", "name": "Cervignano del Friuli" },
       { "@type": "City", "name": "Portogruaro" },
-      { "@type": "City", "name": "Pordenone" }
+      { "@type": "City", "name": "San Donà di Piave" },
+      { "@type": "City", "name": "Conegliano" },
+      { "@type": "City", "name": "Oderzo" },
+      { "@type": "City", "name": "Motta di Livenza" },
+      { "@type": "City", "name": "Caorle" },
+      { "@type": "City", "name": "San Michele al Tagliamento" },
+      { "@type": "City", "name": "Bibione" },
+      { "@type": "City", "name": "Concordia Sagittaria" },
+      { "@type": "City", "name": "Pramaggiore" },
+      { "@type": "City", "name": "Annone Veneto" },
+      { "@type": "City", "name": "Cinto Caomaggiore" },
+      { "@type": "City", "name": "Gruaro" },
+      { "@type": "City", "name": "Teglio Veneto" },
+      { "@type": "City", "name": "Fossalta di Portogruaro" },
+      { "@type": "City", "name": "San Stino di Livenza" },
+      { "@type": "City", "name": "Meduna di Livenza" },
+      { "@type": "City", "name": "Gorgo al Monticano" },
+      { "@type": "City", "name": "Ceggia" },
+      { "@type": "City", "name": "Torre di Mosto" }
     ],
     "member": [
       { "@type": "Person", "name": "Roberta Liut", "roleName": "voce" },
@@ -111,7 +182,8 @@
         <div class="lang-switch" role="group" aria-label="Language">
           <button type="button" data-lang="it">IT</button><span aria-hidden="true">|</span>
           <button type="button" data-lang="en">EN</button><span aria-hidden="true">|</span>
-          <button type="button" data-lang="de">DE</button>
+          <button type="button" data-lang="de">DE</button><span aria-hidden="true">|</span>
+          <button type="button" data-lang="sl">SL</button>
         </div>
       </nav>
     </div>
@@ -153,7 +225,7 @@
       </figure>
       <div class="band-text" data-reveal>
         <h2 class="section-title" data-i18n="band.heading">BAND</h2>
-        <p data-i18n="band.p1">Panic Station è una live band pop rock nata dall'incontro di cinque musicisti con anni di palco alle spalle. Un progetto che unisce l'energia del rock e la freschezza del pop contemporaneo, portati sul palco con l'intensità di una vera performance dal vivo.</p>
+        <p data-i18n="band.p1">Panic Station è una live band pop rock del Friuli-Venezia Giulia, nata dall'incontro di cinque musicisti con anni di palco alle spalle. Un progetto che unisce l'energia del rock e la freschezza del pop contemporaneo, portato dal vivo tra Friuli e Veneto orientale in locali, sagre ed eventi pubblici con l'intensità di una vera performance.</p>
         <p data-i18n="band.p2">La setlist spazia dai grandi successi di oggi ai classici che hanno fatto la storia del pop rock: da Dua Lipa, Billie Eilish e Chappell Roan a Green Day, Paramore, Måneskin, The Police e Bon Jovi, passando per hit italiane e internazionali. Un incontro di generi e generazioni che tiene alta l'energia dal primo all'ultimo brano.</p>
         <p data-i18n="band.p3">Dietro Panic Station c'è esperienza vera: ogni componente arriva da anni di concerti e progetti dal vivo, e questa maturità si sente sul palco, in una performance energica, precisa e coinvolgente. Una band professionale, a suo agio tra club, piazze ed eventi di ogni dimensione.</p>
         <p class="members-intro" data-i18n="band.membersIntro">I Panic Station sono:</p>
