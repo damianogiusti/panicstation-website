@@ -40,10 +40,11 @@
 
   function detectLang() {
     const saved = localStorage.getItem("lang");
-    if (saved === "it" || saved === "en" || saved === "de") return saved;
+    if (saved === "it" || saved === "en" || saved === "de" || saved === "sl") return saved;
     const nav = (navigator.language || "en").toLowerCase();
     if (nav.startsWith("it")) return "it";
     if (nav.startsWith("de")) return "de";
+    if (nav.startsWith("sl")) return "sl";
     return "en";
   }
 
