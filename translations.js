@@ -36,7 +36,9 @@ var TRANSLATIONS = {
     "gig.addCalendar": "Aggiungi al calendario",
     "gig.teaser": "In continuo aggiornamento",
     "gig.calendarDetails": "Live Panic Station",
-    "footer.photos": "Foto di"
+    "footer.photos": "Foto di",
+    "footer.madeWith": "Fatto con",
+    "footer.by": "da"
   },
 
   en: {
@@ -74,7 +76,9 @@ var TRANSLATIONS = {
     "gig.addCalendar": "Add to calendar",
     "gig.teaser": "Constantly updated",
     "gig.calendarDetails": "Panic Station Live",
-    "footer.photos": "Photos by"
+    "footer.photos": "Photos by",
+    "footer.madeWith": "Made with",
+    "footer.by": "by"
   },
 
   de: {
@@ -112,7 +116,9 @@ var TRANSLATIONS = {
     "gig.addCalendar": "Zum Kalender hinzufügen",
     "gig.teaser": "Wird laufend aktualisiert",
     "gig.calendarDetails": "Panic Station Live",
-    "footer.photos": "Fotos von"
+    "footer.photos": "Fotos von",
+    "footer.madeWith": "Gemacht mit",
+    "footer.by": "von"
   },
 
   sl: {
@@ -150,6 +156,8 @@ var TRANSLATIONS = {
     "gig.addCalendar": "Dodaj v koledar",
     "gig.teaser": "Se nenehno posodablja",
     "gig.calendarDetails": "Panic Station v živo",
-    "footer.photos": "Fotografije:"
+    "footer.photos": "Fotografije:",
+    "footer.madeWith": "Narejeno z",
+    "footer.by": "avtor"
   }
 };
